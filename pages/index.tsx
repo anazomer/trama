@@ -10,7 +10,7 @@ export default function Home() {
     <>
     
       <div className={styles.main}>
-        <h1>TRAMA</h1>
+        <h1>TRAMA1</h1>
       </div>
     </>
   )
