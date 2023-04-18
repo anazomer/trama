@@ -5,38 +5,35 @@ export default function Footer() {
   return (
     <>
       <Container>
-        <FooterContainer>
+        <FooterContainer1>
           <img src='/logo.png'></img>
+
+        </FooterContainer1>
+        <FooterContainer2>
           <p>
             Av. Prof. Lúcio Martins Rodrigues, 443 | Butantã, São Paulo - SP |
             CEP 05508-020
           </p>
-        </FooterContainer>
+        </FooterContainer2>
       </Container>
     </>
   );
 }
 
-export const Container = styled('footer', {
+const Container = styled('footer', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
   flexWrap: 'wrap',
-  padding: '25px 8em 25px 8em',
+  padding: '25px 10em 25px 10em',
   background: 'WhiteSmoke',
+  position: 'relative',
+  flexDirection: 'row',
 });
 
-export const FooterContainer = styled('div', {
+const FooterContainer1 = styled('div', {
   justifyContent: 'space-between',
-  display: 'flex',
   alignItems: 'center',
-  gap: '60rem',
-
-  p: {
-    fontFamily: 'Comfortaa, cursive',
-    fontSize: '12px',
-    color: '#222222',
-  },
 
   img: {
     display: 'flex',
@@ -44,5 +41,16 @@ export const FooterContainer = styled('div', {
     width: 'auto',
     justifyContent: 'center',
     flexDirection: 'row',
+  },
+});
+
+const FooterContainer2 = styled('div', {
+  justifyContent: 'space-between',
+  alignItems: 'center',
+
+  p: {
+    fontFamily: 'Comfortaa, cursive',
+    fontSize: '12px',
+    color: '#222222',
   },
 });

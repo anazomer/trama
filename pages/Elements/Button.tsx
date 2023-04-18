@@ -22,9 +22,22 @@ export default function Button(props: IButton) {
     // style a tags
 
     a: {
-      textDecoration: 'none',
-      color: 'white',
-      textTransform: 'uppercase',
+      //padding: '0.5rem 1rem',
+    //color: 'white',
+    textDecoration: 'none',
+    color: '#555555',
+    //color: '#8A8A8A',
+    padding: '35px',
+    transition: 'all .3s ease',
+    fontFamily: 'Comfortaa, cursive',
+    fontSize: '22px',
+    fontWeight: '500',
+    letterSpacing: '2px',
+
+    '&:hover': {
+        color: '#DA291C',
+        fontWeight: '700',
+    },
     },
   });
 

@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { styled, keyframes } from '../../styles/stitches.config';
 import Button from '../elements/Button';
+import { createStitches } from '@stitches/react';
 
-function Navbar() {
+/* function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
 
+
   const changeNavbar = () => {
-    if (window.scrollY >= 450) {
+    if (window.scrollY >= 600) {
       setShowNavbar(true);
+      
     } else {
       setShowNavbar(false);
     }
+
   };
 
   useEffect(() => {
@@ -18,67 +22,105 @@ function Navbar() {
   }, []);
 
   const appearNavbar = keyframes({
-    '0%': { opacity: '0' },
-    '100%': { opacity: '1' },
-  });
+    '0%': { opacity: 0 },
+    '100%': { opacity: 1 },
+  }); */
 
-  const Header = styled('section', {
+/* const Header = styled('section', {
+  position: 'fixed',
+  zIndex: '1000',
+  letf: '0',
+  top: '0',
+  width: '100vw',
+  height: '7vh',
+  //animation: `${appearNavbar} 500ms ease-in-out`,
+  background: 'transparent',
+  //backdropFilter: 'blur(10px)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  a: {
+    textDecoration: 'none',
+    color: '#555555',
+    padding: '35px',
+    transition: 'all .3s ease',
+    fontFamily: 'Comfortaa, cursive',
+    fontSize: '22px',
+    fontWeight: '500',
+    letterSpacing: '2px',
+    
+    '&:hover': {
+      color: '#DA291C',
+      fontWeight: '700',
+    },
+  },
+
+  sticky: {
+    background: 'black',
+  },
+});
+
+
+window.addEventListener("scroll", function(){
+  const header = document.querySelector("Header");
+  Header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+
+<header>
+ <Header>    
+      <Button text='início' to='main' />
+      <Button text='sobre' to='sobre' />
+      <Button text='publicações' to='publicacoes' />
+      <Button text='pesquisadores' to='pesquisadores' />
+      <Button text='contato' to='contato' />
+  </Header>
+
+</header> */
+
+/*   const Header = styled('section', {
     position: 'fixed',
-    zIndex: '100',
+    zIndex: '1000',
     letf: '0',
     top: '0',
     width: '100vw',
-    height: 'auto',
-    minHeight: '8vh',
+    height: '7vh',
     animation: `${appearNavbar} 500ms ease-in-out`,
-  });
-
-  const Container = styled('div', {
+    background: 'rgba (255, 255, 255, 0.1)',
+    backdropFilter: 'blur(10px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '8vh',
-    // border: '3px solid red',
 
     a: {
       textDecoration: 'none',
-      color: 'white',
-      textTransform: 'uppercase',
-      padding: '32px',
+      color: '#555555',
+      padding: '35px',
       transition: 'all .3s ease',
-
+      fontFamily: 'Comfortaa, cursive',
+      fontSize: '22px',
+      fontWeight: '500',
+      letterSpacing: '2px',
+      
       '&:hover': {
-        color: 'red',
+        color: '#DA291C',
+        fontWeight: '700',
       },
-    },
-
-    '&::after': {
-      content: '',
-      position: 'absolute',
-      height: '100%',
-      width: '100%',
-      backgroundColor: 'black',
-      opacity: '.15',
-      zIndex: '-1',
-      // border: '3px solid blue',
     },
   });
 
   if (!showNavbar) return null;
 
   return (
-    <Header>
-      {/*Seção Header */}
-      <Container>
-        <Button text='Início' to='main' />
-        <Button text='Contato' to='contato' />
-        <Button text='Sobre' to='sobre' />
-        <Button text='Pesquisadores' to='pesquisadores' />
-        <Button text='Publicações' to='publicacoes' />
-        <Button text='Contato' to='contato' />
-      </Container>
+    <Header>    
+        <Button text='início' to='main' />
+        <Button text='sobre' to='sobre' />
+        <Button text='publicações' to='publicacoes' />
+        <Button text='pesquisadores' to='pesquisadores' />
+        <Button text='contato' to='contato' />
     </Header>
   );
-}
+} */
 
-export default Navbar;
+//export default Navbar;

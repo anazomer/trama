@@ -7,7 +7,7 @@ export default function Main() {
       <Container className='main'>
         <MainContainer>
           <div>
-            <img src='/logo.png' alt='Trama Logo' />
+            <img src='/logo.png' alt='Trama Logo' data-aos="fade-up" data-aos-duration="1500" />
           </div>
         </MainContainer>
       </Container>
@@ -17,6 +17,7 @@ export default function Main() {
 
 const Container = styled('section', {
   backgroundImage: 'url(' + '/unsplashPartituras.jpg' + ')',
+  //backgroundImage: 'url(' + '/piano1.jpg' + ')',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -35,9 +36,10 @@ const Container = styled('section', {
     height: '100%',
     width: '100%',
     position: 'absolute',
-    zIndex: '8',
-    background:
-      'linear-gradient(to bottom, rgba(0, 0, 0 ,0), rgba(255,255,255, 1))',
+    zIndex: '5',
+    background: 'whitesmoke',
+    opacity: '0.4',
+    //'linear-gradient(to bottom, rgba(0, 0, 0 ,0), rgba(255,255,255, 1))',
   },
 });
 
