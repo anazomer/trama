@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from '../../styles/stitches.config';
+import { styled } from '@/styles/stitches.config';
 import Link from 'next/link';
 
 export default function Publicacoes() {
@@ -40,7 +40,7 @@ export default function Publicacoes() {
             <p>Ana Leticia Zomer e Adriana Lopes Moreira</p>
             <div>
               <button>
-                <Link href='/Publicacoes'>
+                <Link href=''>
                   <b>Ver mais</b>
                 </Link>
               </button>
@@ -76,8 +76,8 @@ const Container1 = styled('div', {
       fontFamily: 'Comfortaa, cursive',
       textTransform: 'lowercase',
       letterSpacing: '2px',
-      fontSize: '50px',
-      fontWeight: '500',
+      fontSize: '60px',
+      fontWeight: '300',
       color: '#DA291C',
       justifyContent: 'justify',
       display: 'flex',

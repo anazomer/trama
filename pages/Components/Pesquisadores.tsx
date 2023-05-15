@@ -2,6 +2,7 @@ import React from 'react';
 import { styled } from '../../styles/stitches.config';
 import Link from 'next/link';
 
+
 export default function Pesquisadores() {
   return (
     <>
@@ -129,7 +130,7 @@ export default function Pesquisadores() {
         <PesqButton>
           <button>
             <Link href='/Pesquisadores' legacyBehavior>
-              <a>Conheça os colaboradores</a>
+              <a>Veja mais</a>
             </Link>
           </button>
         </PesqButton>
@@ -152,8 +153,8 @@ const Container = styled('section', {
     fontFamily: 'Comfortaa, cursive',
     textTransform: 'lowercase',
     letterSpacing: '2px',
-    fontSize: '60px',
-    fontWeight: '300',
+    fontSize: '50px',
+    fontWeight: '400',
     color: '#DA291C',
     justifyContent: 'justify',
     display: 'flex',
@@ -269,7 +270,7 @@ const PesqCard = styled('div', {
       textDecoration: 'none',
       textTransform: 'uppercase',
       padding: '0.5rem 1rem',
-      background: 'transparent',
+      background: '#DA291C',
       border: '3px solid #DA291C',
       color: 'white',
       fontSize: '15px',
@@ -278,10 +279,11 @@ const PesqCard = styled('div', {
       marginLeft: '10px',
       alignItems: 'end',
       borderRadius: '10px',
+      opacity: '0.7',
 
       '&:hover': {
         boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
-        backgroundColor: '#DA291C',
+        opacity: '1',
       },
     },
   },
@@ -369,7 +371,7 @@ const PesqCard1 = styled('div', {
     textDecoration: 'none',
     textTransform: 'uppercase',
     padding: '0.5rem 1rem',
-    background: 'transparent',
+    background: '#DA291C',
     border: '3px solid #DA291C',
     color: 'white',
     fontSize: '15px',
@@ -378,10 +380,11 @@ const PesqCard1 = styled('div', {
     marginLeft: '10px',
     alignItems: 'end',
     borderRadius: '10px',
+    opacity: '0.7',
 
     '&:hover': {
       boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
-      backgroundColor: '#DA291C',
+      opacity: '1',
     },
   },
 });
@@ -469,7 +472,7 @@ const PesqCard2 = styled('div', {
     textDecoration: 'none',
     textTransform: 'uppercase',
     padding: '0.5rem 1rem',
-    background: 'transparent',
+    background: '#DA291C',
     border: '3px solid #DA291C',
     color: 'white',
     fontSize: '15px',
@@ -478,10 +481,11 @@ const PesqCard2 = styled('div', {
     marginLeft: '10px',
     alignItems: 'end',
     borderRadius: '10px',
+    opacity: '0.7',
 
     '&:hover': {
       boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
-      backgroundColor: '#DA291C',
+      opacity: '1',
     },
   },
 });

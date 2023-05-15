@@ -1,21 +1,19 @@
 import Head from 'next/head';
 import { styled } from '../styles/stitches.config';
-
-import Main from './components/Main';
-import UniversityLogos from './components/UniversityLogos';
-import Sobre from './components/Sobre';
-import Pesquisadores from './components/Pesquisadores';
-import Publicacoes from './components/Publicacoes';
-import Contato from './components/Contato';
-import Footer from './components/Footer';
-import Caracol from './components/Caracol';
-import Objetos from './components/Objetos';
+import Main from './Components/Main';
+import UniversityLogos from './Components/UniversityLogos';
+import Sobre from './Components/Sobre';
+import Pesquisadores from './Components/Pesquisadores';
+import Publicacoes from './Components/Publicacoes';
+import Contato from './Components/Contato';
+import Footer from './Components/Footer';
+import Caracol from './Components/Caracol';
+import Objetos from './Components/Objetos';
 import Youtube from './Components/Youtube';
-
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import MyNavbar from './components/Navbar1';
+import MyNavbar from './Components/Navbar1';
 
 export default function Home() {
   useEffect(() =>{

@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled } from '../../styles/stitches.config';
+import { styled } from '@/styles/stitches.config';
 
 
 export default function Objetos() {
@@ -14,7 +14,7 @@ export default function Objetos() {
         <Info>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dicta ab ipsum, necessitatibus perspiciatis atque sapiente adipisci dolor! Dignissimos necessitatibus ad porro repellendus a libero nisi fuga omnis voluptatem totam!</p>
           <button>
-            <a href='Objetos_sonoros'>Conheça o projeto</a>
+            <a href=''>Conheça o projeto</a>
           </button>
         </Info>
       </Container>
@@ -61,8 +61,8 @@ const Imagem = styled('div', {
     fontFamily: 'Comfortaa, cursive',
     textTransform: 'lowercase',
     letterSpacing: '2px',
-    fontSize: '50px',
-    fontWeight: '400',
+    fontSize: '60px',
+    fontWeight: '300',
     color: '#DA291C',
     textAlign: 'center',
     position: 'relative',
