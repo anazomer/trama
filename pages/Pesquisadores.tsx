@@ -30,12 +30,10 @@ export default function Pesquisadores() {
           Ut nec posuere dolor. Maecenas euismod sit amet quam at convallis.
           Nullam quis viverra dui. Mauris tempus in neque in blandit.
         </p>
+        <Busca>
+          <p>Buscar: <MySearch /></p>
+        </Busca>
 
-      </Container>
-      <Busca>
-        <p>Buscar: <MySearch /></p>
-      </Busca>
-      <Container >
         <PesqContainer className='A' >
           <Imagem>
             <div>
@@ -44,7 +42,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Adriana Lopes Moreira</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>
             <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/8581604014435832' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: adrianalopes@usp.br? subject=subject text'>Contato </a>
           </Info>
@@ -58,8 +56,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Alexandre Guilherme Montes Silva</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/4268990369548346' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/4268990369548346' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -72,8 +69,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Ana Leticia Crozetta Zomer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0751306719457850' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0751306719457850' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: analeticiazomer@gmail.com? subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -86,8 +82,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Benedicto Bueno Gurgel Júnior</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/1883300038650218' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/1883300038650218' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -100,8 +95,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Daniel Paes de Barros</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/4978408816379790' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/4978408816379790' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -114,8 +108,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Elder dos Santos Oliveira Junior</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/5195177280939183' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/5195177280939183' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -128,8 +121,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Glaucio Adriano Zangheri</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0567545551455140' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0567545551455140' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -142,8 +134,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Gregório dos Santos Oliveira</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/6923381906862508' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/6923381906862508' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -156,8 +147,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Maria Lúcia Senna Machado Pascoal</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/1957519903631670' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/1957519903631670' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -170,8 +160,7 @@ export default function Pesquisadores() {
           </Imagem>
           <Info>
             <h3>Mário Rodrigues Videira Junior</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. Dolorem quibusdam quis, soluta vero obcaecati perspiciatis.</p>
-            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0594285512566549' target='_blank'>Acesse o Lattes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dicta nostrum ipsum dignissimos consectetur voluptatem, culpa ea ut perspiciatis sed asperiores consequatur amet sequi facilis et unde in totam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident itaque iusto repudiandae quas perferendis minus enim, saepe ex blanditiis incidunt accusamus dolor. </p>            <i className="fa-regular fa-address-card"></i> <a href='http://lattes.cnpq.br/0594285512566549' target='_blank'>Acesse o Lattes</a>
             <i className="fa-regular fa-envelope"></i> <a href='mailto: / subject=subject text'>Contato </a>
           </Info>
         </PesqContainer>
@@ -193,16 +182,29 @@ const MainContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: 'whitesmoke',
 
   div: {
-    background: 'white',
-    marginTop: '65px',
     width: '100%',
-    height: '300px',
+    height: '350px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundImage: 'url(' + '/unsplashPartituras.jpg' + ')',
+    flexDirection: 'column',
+    overflow: 'hidden',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
+
+    '&::after': {
+      content: '',
+      height: '100%',
+      width: '100%',
+      position: 'absolute',
+      background: 'whitesmoke',
+      opacity: '0.4',
+    },
   },
 
   img: {
@@ -210,16 +212,15 @@ const MainContainer = styled('div', {
     justifyContent: 'center',
     alignItems: 'center',
     maxHeight: '50px',
+    zIndex: '50',
   },
 });
 
 const Container = styled('section', {
   flexDirection: 'column',
-  //margin: 'auto',
-  padding: '40px 10em 20px 10em',
+  padding: '100px 10em 0px 10em',
   backgroundColor: 'whitesmoke',
   display: 'flex',
-  justifyContent: 'center',
   position: 'relative',
 
   h1: {
@@ -241,53 +242,22 @@ const Container = styled('section', {
     lineHeight: '2.2rem',
     fontWeight: '400',
     letterSpacing: '.05rem',
-    padding: '40px 0em 20px 0em',
-    marginBottom: '20px',
-  },
-
-  h2: {
-    //fontFamily: 'Comfortaa, cursive',
-    fontFamily: 'Libre Franklin, sans-serif',
-    //textTransform: 'lowercase',
-    letterSpacing: '2px',
-    fontSize: '30px',
-    fontWeight: '400',
-    color: '#555555',
-    justifyContent: 'justify',
-    display: 'flex',
-    marginBottom: '20px',
-    marginTop: '0px',
-  },
-
-  h4: {
-    //fontFamily: 'Comfortaa, cursive',
-    fontFamily: 'Libre Franklin, sans-serif',
-    //textTransform: 'lowercase',
-    letterSpacing: '2px',
-    fontSize: '30px',
-    fontWeight: '400',
-    color: '#555555',
-    justifyContent: 'justify',
-    display: 'flex',
-    marginBottom: '20px',
-    marginTop: '50px',
+    marginTop: '40px',
   },
 });
 
 const Busca = styled('div', {
-  marginBottom: '0px',
-  padding: '0px 10em 0px 10em',
+  marginTop: '60px',
+  marginBottom: '40px',
 
   p: {
-    fontFamily: 'Libre Franklin, sans-serif',
-    letterSpacing: '2px',
-    fontSize: '15px',
-    fontWeight: '400',
-    color: '#8A8A8A',
-    justifyContent: 'left',
     display: 'flex',
-    padding: '0px',
-    marginBottom: '0px',
+    alignContent: 'center',
+    fontFamily: 'Libre Franklin, sans-serif',
+    color: '#555555',
+    fontSize: '18px',
+    fontWeight: '500',
+    letterSpacing: '.05rem',
   },
 });
 
@@ -298,7 +268,7 @@ const PesqContainer = styled('div', {
   backgroundColor: 'white',
   flexDirection: 'column',
   borderRadius: '10px',
-  marginBottom: '20px',
+  marginBottom: '40px',
 });
 
 
@@ -358,6 +328,7 @@ const Info = styled('div', {
     marginTop: '25px',
     padding: '0',
     marginRight: '25px',
+    marginBottom: '55px',
   },
 
   a: {
@@ -373,6 +344,7 @@ const Info = styled('div', {
     textTransform: 'uppercase',
     justifyContent: 'space-around',
     cursor: 'pointer',
+
     '&:hover': {
       color: '#DA291C',
       transition: '.3s ease',
@@ -385,6 +357,7 @@ const PesqButton = styled('div', {
   justifyContent: 'center',
   position: 'relative',
   display: 'flex',
+  marginBottom: '60px',
 
   button: {
     padding: '1em 3em 1em 3em',

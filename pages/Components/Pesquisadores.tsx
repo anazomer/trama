@@ -143,7 +143,7 @@ const Container = styled('section', {
   flexDirection: 'column',
   textAlign: 'center',
   margin: 'auto',
-  padding: '70px 10em 70px 10em',
+  padding: '100px 10em 100px 10em',
   backgroundColor: 'whitesmoke',
   display: 'flex',
   justifyContent: 'center',

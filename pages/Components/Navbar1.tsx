@@ -46,6 +46,7 @@ const MenuItem = styled('a', {
     fontSize: '22px',
     fontWeight: '500',
     letterSpacing: '2px',
+    zIndex: '999',
 
     '&:hover': {
         color: '#DA291C',
@@ -76,10 +77,11 @@ function MyNavbar() {
 
 
     return (
-        <Navbar scrolled={scrolled} css={{ animation: `${fadeIn} 0.5s` }}>
+        <Navbar id='navbar' scrolled={scrolled} css={{ animation: `${fadeIn} 0.5s` }}>
 
             <Button text='início' to='main' />
             <Button text='sobre' to='sobre' />
+            <Button text='projetos' to='projetos' />
             <Button text='publicações' to='publicacoes' />
             <Button text='pesquisadores' to='pesquisadores' />
             <Button text='contato' to='contato' />

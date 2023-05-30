@@ -14,9 +14,6 @@ const Search = styled('span', {
 function MySearch() {
     const [scrolled, setScrolled] = useState(false);
 
-
-
-
     return (
         <Search scrolled={scrolled}>
 

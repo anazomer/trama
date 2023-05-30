@@ -5,7 +5,7 @@ export default function Contato() {
   return (
     <>
       <Container className='contato'>
-        <h1 data-aos="fade-right">Contato</h1>
+        <h1>Contato</h1>
         <ContContainer>
           <Map
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.28381655509!2d-46.72894208519028!3d-23.558248067362076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce563e4e136525%3A0xdb37c533afea882d!2sAv.%20Prof.%20L%C3%BAcio%20Martins%20Rodrigues%2C%20443%20-%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005508-020!5e0!3m2!1spt-BR!2sbr!4v1679407038644!5m2!1spt-BR!2sbr'
@@ -13,7 +13,7 @@ export default function Contato() {
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
           ></Map>
-          <form action=''>
+          <form action='mailto:adrianalopes@usp.br' method='post' encType='text/plain'>
             <Box>
               <input type={'text'} placeholder='Nome'></input>
             </Box>
@@ -40,23 +40,23 @@ const Container = styled('section', {
   flexDirection: 'column',
   textAlign: 'center',
   margin: 'auto',
-  padding: '150px 10em 50px 10em',
+  padding: '150px 10em 150px 10em',
   backgroundColor: 'white',
 
   h1: {
     fontFamily: 'Comfortaa, cursive',
     textTransform: 'lowercase',
     letterSpacing: '2px',
-    fontSize: '50px',
-    fontWeight: '400',
-    color: '#DA291C',
-    justifyContent: 'justify',
+    fontSize: '40px',
+    fontWeight: '800',
+    color: '#8A8A8A',
+    justifyContent: 'center',
     display: 'flex',
   },
 });
 
 const ContContainer = styled('div', {
-  padding: '50px 0',
+  padding: '60px 0',
   fontFamily: 'Libre Franklin, sans-serif',
   display: 'flex',
   background: 'white',
@@ -71,7 +71,6 @@ const ContContainer = styled('div', {
 
 const Map = styled('iframe', {
   flex: '20 1 20px',
-  borderRadius: '20px',
   border: 'none',
 });
 
@@ -116,7 +115,7 @@ const ContButton = styled('button', {
     fontWeight: '600',
     letterSpacing: '.05rem',
     textTransform: 'uppercase',
-    borderRadius: '20px',
+    borderRadius: '10px',
   },
 
   ':hover': {
@@ -125,5 +124,3 @@ const ContButton = styled('button', {
     transition: '.3s ease',
   },
 });
-
-//Falta configurar o e-mail//

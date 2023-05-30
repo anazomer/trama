@@ -62,7 +62,7 @@ export default function Sobre() {
 
 const Container = styled('section', {
   margin: 'auto',
-  padding: '70px 10em 70px 10em',
+  padding: '100px 10em 100px 10em',
   backgroundColor: 'whitesmoke',
   alignItems: 'center',
 });

@@ -72,10 +72,8 @@ const LogosContainer = styled('div', {
 const Grid1 = styled('a', {
   background: 'rgba (255, 255, 255, 0.1)',
   backdropFilter: 'blur(10px)',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRight: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRadius: '20px 20px 0 0',
-  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
+  borderRadius: '20px',
+  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.2)',
   display: 'flex',
   transition: 'all .2s ease-in-out ',
   textDecoration: 'none',
@@ -104,10 +102,8 @@ const Grid1 = styled('a', {
 const Grid2 = styled('a', {
   background: 'rgba (255, 255, 255, 0.1)',
   backdropFilter: 'blur(10px)',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRight: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRadius: '20px 20px 0 0',
-  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
+  borderRadius: '20px',
+  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.2)',
   display: 'flex',
   transition: 'all .2s ease-in-out ',
   textDecoration: 'none',
@@ -136,10 +132,8 @@ const Grid2 = styled('a', {
 const Grid3 = styled('a', {
   background: 'rgba (255, 255, 255, 0.1)',
   backdropFilter: 'blur(10px)',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRight: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRadius: '20px 20px 0 0',
-  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
+  borderRadius: '20px',
+  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.2)',
   display: 'flex',
   transition: 'all .2s ease-in-out ',
   textDecoration: 'none',
@@ -168,10 +162,8 @@ const Grid3 = styled('a', {
 const Grid4 = styled('a', {
   background: 'rgba (255, 255, 255, 0.1)',
   backdropFilter: 'blur(10px)',
-  borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRight: '1px solid rgba(255, 255, 255, 0.1)',
-  borderRadius: '20px 20px 0 0',
-  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.3)',
+  borderRadius: '20px',
+  boxShadow: '0px 3px 7px 0px rgba(0, 0, 0, 0.2)',
   display: 'flex',
   transition: 'all .2s ease-in-out ',
   textDecoration: 'none',
@@ -179,14 +171,14 @@ const Grid4 = styled('a', {
   flexDirection: 'column',
 
   img: {
-    maxWidth: '200px',
-    maxHeight: '50px',
+    maxWidth: '150px',
+    maxHeight: '80px',
     width: 'auto',
-    height: 'auto',
+    height: '80px',
     margin: 'auto',
     display: 'flex',
-    marginTop: '50px',
-    marginBottom: '30px',
+    marginTop: '25px',
+    marginBottom: '25px',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -199,8 +191,9 @@ const Grid4 = styled('a', {
 
 const Info1 = styled('div', {
   flexDirection: 'column',
-  backgroundColor: 'White',
+  backgroundColor: 'white',
   padding: '30px 10px 40px 10px',
+  borderRadius: '0 0 20px 20px',
 
   h2: {
     fontFamily: 'Libre Franklin, sans-serif',
@@ -224,6 +217,7 @@ const Info1 = styled('div', {
     fontWeight: '500',
     letterSpacing: '.05rem',
     padding: '0 10px 20px 10px',
+    borderBottom: '20px',
   },
 });
 
@@ -232,6 +226,7 @@ const Info2 = styled('div', {
   background: 'White',
   padding: '30px 10px 40px 10px',
   width: '100%',
+  borderRadius: '0 0 20px 20px',
 
   h2: {
     fontFamily: 'Libre Franklin, sans-serif',

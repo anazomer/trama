@@ -7,8 +7,7 @@ import Pesquisadores from './Components/Pesquisadores';
 import Publicacoes from './Components/Publicacoes';
 import Contato from './Components/Contato';
 import Footer from './Components/Footer';
-import Caracol from './Components/Caracol';
-import Objetos from './Components/Objetos';
+import Projetos from './Components/Projetos';
 import Youtube from './Components/Youtube';
 import { useEffect } from 'react';
 import Aos from 'aos';
@@ -31,8 +30,8 @@ export default function Home() {
       <Main />
       <UniversityLogos />
       <Sobre />
-      <Caracol />
-      <Objetos />
+      <Projetos />
+
       <Publicacoes />
       <Youtube />
       <Pesquisadores />
