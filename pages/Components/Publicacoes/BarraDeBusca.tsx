@@ -2,6 +2,8 @@ import { createStitches } from '@stitches/react';
 import { useEffect, useState } from 'react';
 import Button from '@/pages/Elements/SearchButton';
 
+
+
 const { styled } = createStitches({});
 
 function MySearch() {
@@ -11,7 +13,7 @@ function MySearch() {
     <BarraCategorias>
       <h4>Busque por palavras-chave ou navegue por categorias:</h4>
 
-      <Search scrolled={scrolled}>
+      <Search>
         <div>
           <Button text={<StyledText>Periódicos</StyledText>} to="periodicos" />
           <Button text={<StyledText>Anais de congressos</StyledText>} to="congressos" />
