@@ -2,17 +2,28 @@ import React, { useState } from 'react';
 import { revistas, congressos, dissertacoes, teses } from './ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
+interface Publicacao {
+  id: number;
+  title: {
+    text: string;
+    link: string;
+  };
+  author: string;
+  magazine: string;
+  year: number;
+}
+
 function TrabalhosRecentes() {
   const [sortBy, setSortBy] = useState('year');
 
-  const sortPublicacoes = (publicacoes, sortBy) => {
+  const sortPublicacoes = (publicacoes: Publicacao[], sortBy: string) => {
     if (sortBy === 'year') {
       return publicacoes.sort((a, b) => b.year - a.year);
     }
     return publicacoes;
   };
 
-  const getRecentPublicacoes = (publicacoes) => {
+  const getRecentPublicacoes = (publicacoes: Publicacao[]) => {
     return publicacoes.slice(0, 5);
   };
 

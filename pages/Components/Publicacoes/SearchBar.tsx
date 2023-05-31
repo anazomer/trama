@@ -3,14 +3,24 @@ import { styled } from '@/styles/stitches.config';
 import { revistas, congressos, dissertacoes, teses } from './ListaPublicacoes';
 import React from 'react';
 
+interface Publicacao {
+    id: number;
+    title: {
+      text: string;
+      link: string;
+    };
+    author: string;
+    magazine: string;
+    year: number;
+  }
 
 export default function MySearch() {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchBy, setSearchBy] = useState('both');
-    const [searchResults, setSearchResults] = useState([]);
+    const [searchResults, setSearchResults] = useState<Publicacao[]>([]);
 
     const handleSearch = () => {
-        const allData = [...revistas, ...congressos, ...dissertacoes, ...teses];
+        const allData: Publicacao[] = [...revistas, ...congressos, ...dissertacoes, ...teses];
 
         const results = allData.filter((item) => {
             const searchTermLowerCase = searchTerm.toLowerCase();

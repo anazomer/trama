@@ -2,15 +2,27 @@ import React, { useState } from 'react';
 import { revistas } from './ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
+interface Revista {
+  id: number;
+  title: {
+    text: string;
+    link: string;
+  };
+  author: string;
+  magazine: string;
+  year: number;
+}
+
 function RevistaListPage() {
   const [sortBy, setSortBy] = useState('title');
 
-  const handleSortChange = (event) => {
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedSortBy = event.target.value;
     setSortBy(selectedSortBy);
   };
+  
 
-  const sortPublicacoes = (revistas, sortBy) => {
+  const sortPublicacoes = (revistas: Revista[], sortBy: string) => {
     switch (sortBy) {
       case 'title':
         return revistas.sort((a, b) => a.title.text.localeCompare(b.title.text));
@@ -24,6 +36,7 @@ function RevistaListPage() {
         return revistas;
     }
   };
+  
 
   const sortedPublicacoes = sortPublicacoes(revistas, sortBy);
 

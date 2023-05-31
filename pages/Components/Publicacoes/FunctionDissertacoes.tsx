@@ -2,28 +2,43 @@ import React, { useState } from 'react';
 import { dissertacoes } from './ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
+interface Dissertacao {
+  id: number;
+  title: {
+    text: string;
+    link: string;
+  };
+  author: string;
+  magazine: string;
+  year: number;
+}
+
+
 function DissertacaoListPage() {
   const [sortBy, setSortBy] = useState('title');
 
-  const handleSortChange = (event) => {
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedSortBy = event.target.value;
     setSortBy(selectedSortBy);
   };
 
-  const sortPublicacoes = (dissertacoes, sortBy) => {
+
+  const sortPublicacoes = (dissertacoes: Dissertacao[], sortBy: string) => {
     switch (sortBy) {
       case 'title':
         return dissertacoes.sort((a, b) => a.title.text.localeCompare(b.title.text));
       case 'author':
         return dissertacoes.sort((a, b) => a.author.localeCompare(b.author));
       case 'year':
-        return dissertacoes.sort((a, b) => b.year - a.year);
+        return dissertacoes.sort((a, b) => Number(b.year) - Number(a.year));
       case 'magazine':
         return dissertacoes.sort((a, b) => a.magazine.localeCompare(b.magazine));
       default:
         return dissertacoes;
     }
   };
+  
+
 
   const sortedPublicacoes = sortPublicacoes(dissertacoes, sortBy);
 

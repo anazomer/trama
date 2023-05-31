@@ -15,7 +15,7 @@ function MySearch() {
     const [scrolled, setScrolled] = useState(false);
 
     return (
-        <Search scrolled={scrolled}>
+        <Search>
 
             <Button text='A' to='A' />
             <Button text='B' to='B' />

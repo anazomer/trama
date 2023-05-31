@@ -2,28 +2,40 @@ import React, { useState } from 'react';
 import { congressos } from './ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
+interface Publicacao {
+  id: number;
+  title: {
+    text: string;
+    link: string;
+  };
+  author: string;
+  magazine: string;
+  year: number;
+}
+
 function CongressoListPage() {
   const [sortBy, setSortBy] = useState('title');
 
-  const handleSortChange = (event) => {
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedSortBy = event.target.value;
     setSortBy(selectedSortBy);
   };
 
-  const sortPublicacoes = (congressos, sortBy) => {
+  const sortPublicacoes = (congressos: Publicacao[], sortBy: string) => {
     switch (sortBy) {
       case 'title':
         return congressos.sort((a, b) => a.title.text.localeCompare(b.title.text));
       case 'author':
         return congressos.sort((a, b) => a.author.localeCompare(b.author));
       case 'year':
-        return congressos.sort((a, b) => b.year - a.year);
+        return congressos.sort((a, b) => (b.year as number) - (a.year as number));
       case 'magazine':
         return congressos.sort((a, b) => a.magazine.localeCompare(b.magazine));
       default:
         return congressos;
     }
   };
+  
 
   const sortedPublicacoes = sortPublicacoes(congressos, sortBy);
 
@@ -32,7 +44,6 @@ function CongressoListPage() {
       <SortBar>
         <label>Ordenar por:</label>
         <select onChange={handleSortChange}>
-
           <option value="title">Título (A-Z)</option>
           <option value="author">Autor (A-Z)</option>
           <option value="year">Ano (decrescente)</option>
@@ -44,7 +55,7 @@ function CongressoListPage() {
         {sortedPublicacoes.map((publicacao) => (
           <Publicacao key={publicacao.id}>
             <h3>
-              <a href={publicacao.title.link} target='new blank'>
+              <a href={publicacao.title.link} target="_blank" rel="noopener noreferrer">
                 <span dangerouslySetInnerHTML={{ __html: publicacao.title.text }}></span>
               </a>
             </h3>

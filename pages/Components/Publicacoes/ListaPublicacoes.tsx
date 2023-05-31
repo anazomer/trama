@@ -17,7 +17,7 @@ const revistas = [
         },
         author: 'ZOMER, Ana Leticia Crozetta; MOREIRA, Adriana Lopes da Cunha,',
         magazine: 'REVISTA MUSICA,',
-        year: '2021',
+        year: 2021,
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const revistas = [
         },
         author: 'GUMBOSKI, Leandro; ZOMER, Ana Leticia Crozetta; MOREIRA, Adriana Lopes da Cunha,',
         magazine: 'MUSICA THEORICA,',
-        year: '2019',
+        year: 2019,
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const revistas = [
         },
         author: 'ZOMER, Ana Leticia Crozetta,',
         magazine: 'REVISTA DA TULHA,',
-        year: '2019',
+        year: 2019,
     },
 ];
 
@@ -83,4 +83,4 @@ const teses = [
 ];
 
 
-export {revistas, congressos, dissertacoes, teses};
+export { revistas, congressos, dissertacoes, teses };

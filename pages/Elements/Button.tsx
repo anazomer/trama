@@ -1,28 +1,24 @@
 import { Link as ReactScroll } from 'react-scroll';
 import { styled } from '../../styles/stitches.config';
+
 interface IButton {
   text?: string;
   to?: string;
 }
 
-export default function Button(props: IButton) {
-  const { text, to } = props;
+const StyledButton = styled('button', {
+  background: 'none',
+  border: 'none',
+  fontSize: '24px',
+  padding: '100px 0',
 
-  const Button = styled('button', {
+  '&:hover': {
+    cursor: 'pointer',
     background: 'none',
-    border: 'none',
-    fontSize: '24px',
-    padding: '100px 0',
+  },
 
-    '&:hover': {
-      cursor: 'pointer',
-      background: 'none',
-    },
-
-    // style a tags
-
-    a: {
-      //padding: '0.5rem 1rem',
+  a: {
+    //padding: '0.5rem 1rem',
     //color: 'white',
     textDecoration: 'none',
     color: '#555555',
@@ -34,24 +30,20 @@ export default function Button(props: IButton) {
     fontWeight: '500',
     letterSpacing: '2px',
 
+
     '&:hover': {
-        color: '#DA291C',
-        fontWeight: '700',
+      color: '#DA291C',
+      fontWeight: '700',
     },
-    },
-  });
+  },
+});
 
-  const LinkUI = styled(ReactScroll, {
-    color: 'red',
-
-    // border: '1px solid red',
-  });
-
+const Button: React.FC<IButton> = ({ text, to }) => {
   return (
-    <>
-      <Button>
-        <LinkUI to={to}>{text}</LinkUI>
-      </Button>
-    </>
+    <StyledButton>
+      {to ? <ReactScroll to={to}>{text}</ReactScroll> : null}
+    </StyledButton>
   );
-}
+};
+
+export default Button;

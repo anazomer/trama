@@ -2,15 +2,29 @@ import React, { useState } from 'react';
 import { teses } from './ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
+
+interface Tese {
+  id: number;
+  title: {
+    text: string;
+    link: string;
+  };
+  author: string;
+  magazine: string;
+  year: number;
+}
+
 function TeseListPage() {
   const [sortBy, setSortBy] = useState('title');
 
-  const handleSortChange = (event) => {
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedSortBy = event.target.value;
     setSortBy(selectedSortBy);
   };
 
-  const sortPublicacoes = (teses, sortBy) => {
+
+
+  const sortPublicacoes = (teses: Tese[], sortBy: string) => {
     switch (sortBy) {
       case 'title':
         return teses.sort((a, b) => a.title.text.localeCompare(b.title.text));
@@ -24,6 +38,7 @@ function TeseListPage() {
         return teses;
     }
   };
+  
 
   const sortedPublicacoes = sortPublicacoes(teses, sortBy);
 

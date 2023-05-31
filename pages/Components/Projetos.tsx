@@ -216,7 +216,6 @@ const Outros = styled('div', {
     textAlign: 'center',
     padding: '40px 0',
     overflow: 'hidden',
-    backdropFilter: 'blur(2px)',
     backgroundImage: 'url(/piano.jpg)',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
