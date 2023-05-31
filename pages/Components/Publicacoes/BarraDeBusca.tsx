@@ -1,6 +1,6 @@
 import { createStitches } from '@stitches/react';
 import { useEffect, useState } from 'react';
-import Button from '@/pages/Elements/SearchButton';
+import Button from '@/pages/Elements/BarraDeBuscaButton';
 
 
 
@@ -15,10 +15,10 @@ function MySearch() {
 
       <Search>
         <div>
-          <Button text={<StyledText>Periódicos</StyledText>} to="periodicos" />
-          <Button text={<StyledText>Anais de congressos</StyledText>} to="congressos" />
-          <Button text={<StyledText>Dissertações</StyledText>} to="dissertacoes" />
-          <Button text={<StyledText>Teses</StyledText>} to="teses" />
+          <Button text="Periódicos" to="periodicos" />
+          <Button text="Anais de congressos" to="congressos" />
+          <Button text="Dissertações" to="dissertacoes" />
+          <Button text="Teses" to="teses" />
         </div>
       </Search>
     </BarraCategorias>
@@ -56,20 +56,4 @@ const Search = styled('span', {
     display: 'flex',
     marginLeft: 'auto',
   }
-});
-
-const StyledText = styled('span', {
-  display: 'flex',
-  alignContent: 'center',
-  fontFamily: 'Libre Franklin, sans-serif',
-  color: '#555555',
-  fontSize: '18px',
-  fontWeight: '400',
-  letterSpacing: '.05rem',
-
-  '&:hover': {
-    color: '#DA291C',
-    transition: '.3s ease',
-    fontWeight: '500',
-  },
 });
