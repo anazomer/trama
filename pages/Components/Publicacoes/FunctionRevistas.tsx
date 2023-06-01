@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { revistas } from './ListaPublicacoes';
+import { revistas } from '../../../data/ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
 interface Revista {

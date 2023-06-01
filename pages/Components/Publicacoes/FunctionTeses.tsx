@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { teses } from './ListaPublicacoes';
+import { teses } from '../../../data/ListaPublicacoes';
 import { styled } from '@/styles/stitches.config';
 
 
